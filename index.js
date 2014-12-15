@@ -25,7 +25,7 @@ var commonCanvas = {
 
         var pixelNum = img.width * img.height;
         saturate = typeof saturate !== "undefined" ? saturate : pixelNum;    
-        var pixelNumRate = pixelNum / pixelNumResizingSaturation;
+        var pixelNumRate = pixelNum / saturate;
 
         var canvasWidth = img.width;
         var canvasHeight = img.height;
