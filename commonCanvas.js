@@ -20,6 +20,11 @@ if(isNodeModule){
 
 var commonCanvas = {
     Canvas : Canvas,
+    isCanvas : isNodeModule ? function(imageObj){
+    return imageObj instanceof Canvas;} 
+    : function(imageObj){
+        return imageObj.toString() === "[object HTMLCanvasElement]";
+    },
     
     setPixel : function(target, x, y, r, g, b, a){
         color = typeof r === 'object' ? r : {r: r, g: g, b: b, a: a};
