@@ -1,6 +1,6 @@
 {
   "name": "common-canvas",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "common tools with canvas",
   "main": "commonCanvas.js",
   "scripts": {
